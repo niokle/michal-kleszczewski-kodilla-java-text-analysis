@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class SortAndCalculate {
-    private String inputText;
     private ArrayList<String> sortedList = new ArrayList<>();
     private ArrayList<String> finalList = new ArrayList<>();
 

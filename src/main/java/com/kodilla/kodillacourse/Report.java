@@ -8,7 +8,8 @@ public class Report {
         SortAndCalculate sortAndCalculate = new SortAndCalculate();
         FileInput fileInput = new FileInput();
         try {
-            for ( String s : sortAndCalculate.fillFinalList(fileInput.loadFile(textFilePath))) {
+            String file = fileInput.loadFile(textFilePath);
+            for ( String s : sortAndCalculate.fillFinalList(file)) {
                 System.out.println(s);
             }
         } catch (IOException ex) {
